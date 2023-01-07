@@ -1,0 +1,232 @@
+:root {
+  --Grayish-blue: hsl(237, 18%, 59%);
+  --Soft-red: hsl(345, 95%, 68%);
+  --White: hsl(0, 0%, 100%);
+  --Dark-desaturated-blue: hsl(236, 21%, 26%);
+  --Dark-desaturated-blue2: hsl(237, 21%, 19%);
+  --Dark-desaturated-blue3: hsl(234, 22%, 9%);
+  --Very-dark-blue: hsl(235, 16%, 14%);
+  --Very-dark-blue2: hsl(234, 17%, 12%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: "Red Hat Text", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--Very-dark-blue2);
+  overflow: hidden;
+}
+
+#main {
+  height: 520px;
+  background-image: url(./images/bg-stars.svg);
+}
+
+.flip-card {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  gap: 30px;
+}
+
+.time {
+  text-align: center;
+  width: 160px;
+  height: 155px;
+  font-size: 5rem;
+  padding: 30px 30px;
+  font-weight: 700;
+  border-radius: 0.8rem;
+  color: var(--Soft-red);
+  background-color: var(--Dark-desaturated-blue);
+  box-shadow: 0px 10px 0px 0px var(--Dark-desaturated-blue3);
+}
+
+#title {
+  height: 17vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#title > h1 {
+  color: var(--White);
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  letter-spacing: 10px;
+}
+
+.flip-card-wrapper {
+  display: flex;
+  height: 50vh;
+  justify-content: center;
+  padding-top: 10vh;
+  gap: 30px;
+}
+
+.time-txt {
+  color: var(--Grayish-blue);
+  font-weight: 700;
+  letter-spacing: 7px;
+}
+
+.filter {
+  position: absolute;
+  width: 100%;
+  height: 77.5px;
+  border-top-left-radius: 0.8rem;
+  border-top-right-radius: 0.8rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 5;
+}
+
+footer {
+  height: 193px;
+  background-image: url(./images/pattern-hills.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#icons {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.icon {
+  display: inline;
+  margin-top: 30px;
+}
+
+.icon > i {
+  font-size: 2.1rem;
+  color: var(--Grayish-blue);
+  transition: all 0.4s ease-in-out;
+}
+
+.icon > i:hover {
+  transform: scale(1.2) rotate(720deg);
+  color: var(--Soft-red);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 500px) {
+  body {
+    overflow: hidden;
+  }
+  #main {
+    height: 500px;
+    background-image: url(./images/bg-stars.svg);
+    background-size: cover;
+  }
+
+  .flip-card {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    gap: 20px;
+  }
+
+  .time {
+    text-align: center;
+    width: 70px;
+    height: 80px;
+    font-size: 2rem;
+    padding: 15px 5px;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    color: var(--Soft-red);
+    background-color: var(--Dark-desaturated-blue);
+    box-shadow: 0px 10px 0px 0px var(--Dark-desaturated-blue3);
+  }
+
+  #title {
+    height: 27vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  #title > h1 {
+    color: var(--White);
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    text-align: center;
+    letter-spacing: 10px;
+  }
+
+  .flip-card-wrapper {
+    display: flex;
+    height: 20vh;
+    justify-content: center;
+    padding-top: 10vh;
+    gap: 15px;
+  }
+
+  .time-txt {
+    color: var(--Grayish-blue);
+    font-weight: 700;
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+
+  .filter {
+    height: 33.8px;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+  }
+
+  footer {
+    height: 168px;
+    background-image: url(./images/pattern-hills.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #icons {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .icon {
+    display: inline;
+    margin-top: 30px;
+  }
+
+  .icon > i {
+    font-size: 2.1rem;
+    color: var(--Grayish-blue);
+    transition: all 0.4s ease-in-out;
+  }
+
+  .icon > i:hover {
+    transform: scale(1.2) rotate(720deg);
+    color: var(--Soft-red);
+  }
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Red+Hat+Text:wght@400;500;600;700&family=Roboto:wght@400;500;700&family=Ubuntu:wght@400;500;700&family=Unbounded:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/46ffad99ed.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Frontend Mentor | Launch countdown timer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="main">
+      <div id="title">
+        <h1>We're launching soon</h1>
+      </div>
+      <div class="flip-card-wrapper">
+        <div class="flip-card">
+          <div class="time" id="days">60</div>
+          <div class="filter"></div>
+          <p class="time-txt">DAYS</p>
+        </div>
+        <div class="flip-card">
+          <div class="time" id="hours">60</div>
+          <div class="filter"></div>
+          <p class="time-txt">HOURS</p>
+        </div>
+        <div class="flip-card">
+          <div class="time" id="minutes">60</div>
+          <div class="filter"></div>
+          <p class="time-txt">MINUTES</p>
+        </div>
+        <div class="flip-card">
+          <div class="time flip" id="secs">60</div>
+          <div class="filter"></div>
+          <p class="time-txt">SECONDS</p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div id="icons">
+        <div class="icon">
+          <i class="fa-brands fa-facebook"></i>
+        </div>
+        <div class="icon">
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+        <div class="icon">
+          <i class="fa-brands fa-pinterest"></i>
+        </div>
+      </div>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://kristofblog.netlify.app/">Kristof</a>.
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
